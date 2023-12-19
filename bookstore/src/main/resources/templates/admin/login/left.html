@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>菜单</title>
+	<link th:href="@{/css/left.css}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<table width="100" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="12"></td>
+		</tr>
+	</table>
+	<table width="100%" border="0">
+		<tr>
+			<td><a th:href="@{/admin/products/list}" target="mainFrame" class="left_list">商品管理</a></td>
+		</tr>
+		<tr>
+			<td><a th:href="@{/admin/orders/list}" target="mainFrame" class="left_list">订单管理</a></td>
+		</tr>
+		<tr>
+			<td><a th:href="@{/admin/notices/list}" target="mainFrame" class="left_list">公告管理</a></td>
+		</tr>
+	</table>
+</body>
+
+</html>

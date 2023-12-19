@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			SCROLLBAR-ARROW-COLOR: #ffffff;
+			SCROLLBAR-BASE-COLOR: #dee3f7;
+		}
+	</style>
+</head>
+<frameset rows="103,*,43" frameborder=0 border="0" framespacing="0">
+	<frame th:src="@{/admin/top}" name="topFrame" scrolling="NO" noresize>
+		<frameset cols="159,*" frameborder="0" border="0" framespacing="0">
+			<frame th:src="@{/admin/left}" name="leftFrame" noresize scrolling="YES">
+				<frame th:src="@{/admin/welcome}" name="mainFrame">
+		</frameset>
+		<frame th:src="@{/admin/bottom}" name="bottomFrame" scrolling="NO" noresize>
+</frameset>
+
+</html>
