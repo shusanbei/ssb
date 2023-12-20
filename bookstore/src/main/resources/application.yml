@@ -24,9 +24,7 @@ server:
   servlet:
     context-path: /bookstore
     multipart:
-      # 单个文件最大值
       max-file-size: 5MB
-      # 总上传文件最大值
       max-request-size: 50MB
 
 bookstore:
